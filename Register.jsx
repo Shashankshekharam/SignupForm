@@ -8,7 +8,6 @@ import { useDispatch } from 'react-redux';
 import { setUserData } from '../actions/userActions';
 
 
-
 function Register() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -40,7 +39,6 @@ function Register() {
   setFormData({ ...formData, userRegistered: true });
 
   if (allFieldsFilled) {
-    // All fields are filled, set isSubmitted to true and navigate to login
     setIsSubmitted(true);
     dispatch(setUserData(formData));
   } else {

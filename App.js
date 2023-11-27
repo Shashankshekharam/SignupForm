@@ -3,8 +3,9 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Dashboard from './components/Dashboard';
 import Blog from './components/Blog';
+import Category from './components/Category';
+import Profile from './components/Profile';
 
-// ... other imports
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path ="/category" element={<Category />} />
+        <Route path ="/profile" element={<Profile />} />
       </Routes>
     </Router>
   );

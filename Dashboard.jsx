@@ -48,10 +48,15 @@ function Dashboard() {
     </List>
   </Drawer>
 
+  {userData ? (
   <div style={{ margin: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
     <h1>Dashboard</h1>
-    <h3>Hello {userData.firstName} {userData.lastName}</h3>
-</div>
+    <h3>Welcome {userData.firstName} {userData.lastName}</h3>
+  </div>
+) : (
+  <div>Loading...</div>
+)}
+
     </>
 );
 
